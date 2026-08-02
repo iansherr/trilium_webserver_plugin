@@ -1,0 +1,31 @@
+{
+  "id": "iansherr/webserver",
+  "version": "0.1.0",
+  "name": "Web Server",
+  "description": "A small dashboard for Trilium server reachability, ETAPI access, and security status.",
+  "author": "Ian Sherr",
+  "maintainer": "Ian Sherr",
+  "repository": "https://github.com/iansherr/trilium_webserver_plugin",
+  "homepage": "https://github.com/iansherr/trilium_webserver_plugin",
+  "license": "MIT",
+  "compatibility": { "minTriliumVersion": "0.104.0" },
+  "permissions": ["network"],
+  "artifacts": [
+    {
+      "id": "webserver-dashboard",
+      "type": "render",
+      "source": "src/webserver-dashboard.jsx",
+      "integrity": "sha256-6owUeHbA+qt9oCrG2Eposm2y5DAh1QtYskkQ5qp77GY=",
+      "title": "Web Server",
+      "activation": "manual"
+    },
+    {
+      "id": "webserver-launcher",
+      "type": "launcher",
+      "source": "src/webserver-launcher.jsx",
+      "integrity": "sha256-ivf6+F4yVXySJI/SBGT+GDnqXu9OoJwW95yw+a6kFYM=",
+      "title": "Web Server",
+      "activation": "manual"
+    }
+  ]
+}
